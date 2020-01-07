@@ -1,0 +1,8 @@
+{
+  "name": "prisma2-yarn-monorepo",
+  "builds": [{ "src": "packages/backend/api/index.js", "use": "@now/node" }],
+  "routes": [
+    { "src": "/(.*)", "dest": "/packages/backend/api/$1" }
+  ],
+  "version": 2
+}
